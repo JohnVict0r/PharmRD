@@ -155,6 +155,40 @@ Nesta seção haverão instruções caso você queira editar o projeto, explican
 
 - **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
 
+<!-- Colaboradores -->
+
+### Colaboradores
+
+<hr>
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/johnvict0r">
+        <img src="https://avatars0.githubusercontent.com/u/30505330?s=400&v=4" width="100px;" alt="John Victor"/>
+        <br />
+        <sub><b>John Victor</b></sub>
+      </a><br />
+      <a href="https://github.com/JohnVict0r/PharmRD/commits?author=johnvict0r" title="Code">💻</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/marialupiress">
+        <img src="https://avatars0.githubusercontent.com/u/50592833?s=400&v=4" width="100px;" alt="Maria Luiza"/>
+        <br />
+        <sub><b>Maria Luiza</b></sub>
+      </a><br />
+      <a href="https://github.com/JohnVict0r/PharmRD/commits?author=marialupiress" title="Code">💻</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/eulaliaribeiro">
+        <img src="https://avatars0.githubusercontent.com/u/54278522?s=400&v=4" width="100px;" alt="Eulália Ribeiro"/>
+        <br />
+        <sub><b>Eulália Ribeiro</b></sub>
+      </a><br />
+      <a href="https://github.com/JohnVict0r/PharmRD/commits?author=eulaliaribeiro" title="Code">💻</a>
+    </td>
+  </tr>
+</table>
+
 <!-- LICENSE -->
 
 ## Licença
