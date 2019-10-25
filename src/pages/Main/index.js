@@ -6,7 +6,7 @@ import styles from './styles';
 
 const Main = () => (
   <View style={styles.container}>
-    <StatusBar barStyle="light-content" backgroundColor="orange" />
+    <StatusBar barStyle="light-content" backgroundColor="darkblue" />
     <View style={styles.content}>
       <Text style={styles.welcome}>PharmRD</Text>
       <Text style={[styles.instructions, styles.fileName]}>
