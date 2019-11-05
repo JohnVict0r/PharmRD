@@ -1,5 +1,5 @@
 import React from 'react';
-import {createDrawerNavigator} from 'react-navigation';
+import {createDrawerNavigator} from 'react-navigation-drawer';
 
 import OverviewStack from './Overview';
 import Analytics from '../screens/Analytics';
