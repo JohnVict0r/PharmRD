@@ -1,27 +1,22 @@
-import React, { Component } from 'react'
-import { StyleSheet, Dimensions, TouchableOpacity } from 'react-native'
-import * as theme from '../constants/theme';
+import React, {Component} from 'react';
+import {StyleSheet, Dimensions, TouchableOpacity} from 'react-native';
+import * as theme from '~/constants/theme';
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 export default class Button extends Component {
   render() {
-    const { style, full, opacity, children, ...props } = this.props;
-    const buttonStyles = [
-      styles.button,
-      full && styles.full,
-      style,
-    ];
+    const {style, full, opacity, children, ...props} = this.props;
+    const buttonStyles = [styles.button, full && styles.full, style];
 
     return (
       <TouchableOpacity
         style={buttonStyles}
         activeOpacity={opacity || 0.8}
-        {...props}
-      >
+        {...props}>
         {children}
       </TouchableOpacity>
-    )
+    );
   }
 }
 
@@ -36,5 +31,5 @@ const styles = StyleSheet.create({
   },
   full: {
     width: width - 50,
-  }
+  },
 });

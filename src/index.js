@@ -1,10 +1,25 @@
 import React from 'react';
+import {StyleSheet, View, YellowBox} from 'react-native';
+
+YellowBox.ignoreWarnings(['Unrecognized WebSocket']);
+
+import Navigator from '~/navigation/navigatorContainer';
 
 import '~/config/ReactotronConfig';
 
-import Routes from '~/routes';
-import AppNavigation from '~/navigation/AppNavigator';
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Navigator />
+      </View>
+    );
+  }
+}
 
-const App = () => <AppNavigation />;
-
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});

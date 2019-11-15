@@ -40,6 +40,8 @@ target 'PharmRD' do
 
   pod 'RNScreens', :path => '../node_modules/react-native-screens'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'PharmRDTests' do
     inherit! :search_paths
     # Pods for testing
