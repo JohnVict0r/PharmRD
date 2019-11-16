@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Image, Dimensions, AsyncStorage} from 'react-native';
+import {Image, Dimensions} from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import {Button, Block, Text, Input} from '~/components';
 
@@ -21,7 +22,6 @@ class SignInScreen extends Component {
 
     const email = `${this.state.email}`;
     const token = `${this.state.password}`;
-    console.log(email);
     try {
       await this.saveUser(email, token);
 
@@ -52,7 +52,7 @@ class SignInScreen extends Component {
       <Block center middle>
         <Block middle>
           <Image
-            source={require('~/assets/images/Base/logopharmrd.png')}
+            source={require('~/assets/images/Base/pharmrdlateral.png')}
             style={{height: 28, width: 102}}
           />
         </Block>

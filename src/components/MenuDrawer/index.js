@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from 'react-native-elements';
-import {View, Text, Image, TouchableOpacity, AsyncStorage} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 import {colors} from '~/styles';
 
 import styles from './styles';
@@ -13,7 +14,6 @@ class MenuDrawer extends React.Component {
   navigateTo = nav => {
     const {navigation} = this.props;
     navigation.navigate(nav);
-
     /* coloca no estado o link ativo */
     this.setState({
       navActive: nav,
@@ -33,7 +33,7 @@ class MenuDrawer extends React.Component {
           <View style={navActive === nav ? styles.activeIcon : styles.icon}>
             <Icon
               name={icon}
-              // type={iconType}
+              type={iconType}
               color={navActive === nav ? colors.primary : colors.gray}
             />
           </View>
@@ -65,6 +65,7 @@ class MenuDrawer extends React.Component {
         </View>
         <View style={styles.bottomLinks}>
           {this.navLink('Home', 'Home', 'home', 'antdesign')}
+          {this.navLink('Prescriptions', 'Receitas', 'description', 'material')}
           {/* this.navLink('Settings', 'Configurações', 'setting', 'antdesign') */}
           <View style={styles.itemCard}>
             <TouchableOpacity

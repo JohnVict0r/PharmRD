@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {TouchableOpacity, Image, SafeAreaView, ScrollView} from 'react-native';
-import {Icon} from 'react-native-elements';
-import {Block, Card, Text, Label, CustomHeader} from '~/components';
+
+import {Block, Card, Text, Icon, Label, CustomHeader} from '~/components';
 import styles from './styles';
 
 class HomeScreen extends Component {
@@ -45,22 +45,37 @@ class HomeScreen extends Component {
           }}
         />
         <ScrollView contentContainerStyle={{paddingVertical: 25}}>
-          <Card title="Atalhos" style={[styles.margin, {marginTop: 18}]}>
+          {/* <Card row middle style={styles.margin}>
+            <Block flex={1.2} center middle style={{marginRight: 20}}>
+              <Text light height={43} size={36} spacing={-0.45}>
+                86
+              </Text>
+              <Text
+                ligth
+                caption
+                center
+                style={{paddingHorizontal: 16, marginTop: 3}}>
+                OPERATING SCORE
+              </Text>
+            </Block>
+            <Block>
+              <Text paragraph color="black3">
+                All cars are operating well. There were 1,233 trips since your
+                last login.
+              </Text>
+            </Block>
+          </Card> */}
+          <Card title="Receitas" style={[styles.margin, {marginTop: 18}]}>
             <Block style={styles.driver}>
               <TouchableOpacity
                 activeOpacity={0.5}
-                onPress={() => this.readerPrescription()}>
+                onPress={this.readerPrescription()}>
                 <Block row center>
-                  <Block>
-                    <Icon
-                      raised
-                      name="qrcode"
-                      type="font-awesome"
-                      color="#f50"
-                    />
-                  </Block>
                   <Block flex={2}>
-                    <Text h4>Receber Receita</Text>
+                    <Text h4>Receber</Text>
+                    <Text paragraph color="gray">
+                      Apresente o QRCode ou nº do sus para receber a receita
+                    </Text>
                   </Block>
                 </Block>
               </TouchableOpacity>

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { TouchableOpacity, StyleSheet } from 'react-native'
+import React, {Component} from 'react';
+import {TouchableOpacity, StyleSheet} from 'react-native';
 
 import Block from './Block';
 import Text from './Text';
@@ -11,24 +11,26 @@ export default class Card extends Component {
     shadow: true,
     border: true,
     title: null,
-  }
+  };
 
   renderHeader = () => {
-    const { title } = this.props;
+    const {title, options} = this.props;
     if (!title) return null;
 
     return (
       <Block row space="between" style={styles.header}>
         <Text caption>{title}</Text>
-        <TouchableOpacity>
-          <Icon options />
-        </TouchableOpacity>
+        {options && (
+          <TouchableOpacity>
+            <Icon options />
+          </TouchableOpacity>
+        )}
       </Block>
-    )
-  }
+    );
+  };
 
   render() {
-    const { shadow, border, style, children, ...props } = this.props;
+    const {shadow, border, style, children, ...props} = this.props;
     const cardStyles = [
       styles.card,
       shadow && styles.shadow,
@@ -41,7 +43,7 @@ export default class Card extends Component {
         {this.renderHeader()}
         {children}
       </Block>
-    )
+    );
   }
 }
 
@@ -62,7 +64,7 @@ const styles = StyleSheet.create({
     shadowColor: theme.colors.shadow,
     shadowOpacity: 1,
     shadowRadius: 10,
-    shadowOffset: { width: 0, height: 0 },
+    shadowOffset: {width: 0, height: 0},
     elevation: 2,
-  }
+  },
 });

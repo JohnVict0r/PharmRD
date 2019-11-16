@@ -4,6 +4,9 @@ import SignUp from './Auth/SignUp';
 import ForgotPassword from './Auth/ForgotPassword';
 import HomeScreen from './Home';
 import SettingsScreen from './Settings';
+import ReaderScreen from './Reader';
+import PrescriptionsScreen from './Prescriptions';
+import PrescriptionsByPatientScreen from './PrescriptionsByPatient';
 
 export {
   AuthLoading,
@@ -12,4 +15,7 @@ export {
   ForgotPassword,
   HomeScreen,
   SettingsScreen,
+  ReaderScreen,
+  PrescriptionsScreen,
+  PrescriptionsByPatientScreen,
 };

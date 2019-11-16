@@ -76,4 +76,8 @@
 		<string>rubicon-icon-font.ttf</string>
 	</array>
 </dict>
+<key>NSCameraUsageDescription</key>
+<string>Precisamos de permissão para acessar a câmera</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Precisamos de permissão para acessar a câmera</string>
 </plist>
