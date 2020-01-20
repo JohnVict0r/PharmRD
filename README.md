@@ -5,22 +5,13 @@
 *** Obrigado novamente! Agora vamos rodar esse projeto incrível :D
 -->
 
-
-<!-- PROJECT LOGO -->
-<!-- <br />
-<p align="center">
-  <a href="https://rocketseat.com.br">
-    <img src="https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/rocketseat_logo_roxa.png" alt="Logo">
-  </a>
-
-  <h3 align="center">Template Rocketseat Basic</h3>
-</p> -->
-
 <!-- ABOUT THE PROJECT -->
 
 ## Sobre o Projeto
 
 Este projeto visa a criação de um aplicativo Mobile para proporcionar uma nova experiência para os pacientes do brasil quando precisarem comprar seus medicamentos listados no receituário feito pelo seu médico.
+
+O PharmRD soluciona os problemas que se tem com receituário em papel, pois no aplicativo é possível o farmacêutico buscar as receitas médicas diponíveis do paciente fazendo uma simples leitura do QRCode do paciente que contém o número do SUS no aplicativo meuDigisus do ministério da Saúde.
 
 <!-- GETTING STARTED -->
 
